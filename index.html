@@ -142,7 +142,7 @@
 
                         <!-- Map Content for California (Step 2/3) -->
                         <div id="map-california" class="w-full h-full p-4 hidden">
-                            <!-- MARKER 2: Region Focus / California Fire Perimeter -->
+                            <!-- MARKER 2: Region Focus / California Fire Perimeter (Typo corrected) -->
                             <img src="photo2.png" 
                                  alt="Satellite image of California burn perimeter" 
                                  class="map-placeholder-img rounded-lg shadow-inner" 
@@ -152,24 +152,26 @@
 
                         <!-- Map Content for Results (Step 4/5) -->
                         <div id="map-results" class="w-full h-full p-4 hidden">
-                            <!-- MARKER 3: Results Map Background (Photo 3) -->
+                            <!-- MARKER 3: Results Map Background (Burned Satellite Image) -->
                             <div class="relative w-full h-full bg-cover bg-center rounded-lg shadow-inner" 
                                  style="background-image: url('photo3.png')">
                                  
-                                <!-- MARKER 4: The SVG overlay is part of the final visualization (Photo 4) -->
+                                <!-- MARKER 4: The SVG overlay (Color-Coded Parcels) is now a part of the visualization -->
                                 <svg class="absolute inset-0" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
                                     <!-- Simplified grid for visual segmentation -->
-                                    <rect x="5" y="5" width="30" height="30" fill="rgb(22, 163, 74, 0.7)" stroke="white" stroke-width="0.5"/> <!-- Forest Green: Reforest -->
-                                    <rect x="35" y="5" width="30" height="30" fill="rgb(234, 88, 12, 0.7)" stroke="white" stroke-width="0.5"/> <!-- Orange: Soil Rehab -->
-                                    <rect x="65" y="5" width="30" height="30" fill="rgb(220, 38, 38, 0.7)" stroke="white" stroke-width="0.5"/> <!-- Red: Erosion Barrier -->
+                                    <!-- Note: In a real app, this entire SVG block would be replaced by a map library rendering based on photo4.png data. -->
+                                    <image href="photo4.png" x="0" y="0" height="100" width="100" />
 
-                                    <rect x="5" y="35" width="30" height="30" fill="rgb(220, 38, 38, 0.7)" stroke="white" stroke-width="0.5"/> <!-- Red: Erosion Barrier -->
-                                    <rect x="35" y="35" width="30" height="30" fill="rgb(22, 163, 74, 0.7)" stroke="white" stroke-width="0.5"/> <!-- Forest Green: Reforest -->
-                                    <rect x="65" y="35" width="30" height="30" fill="rgb(234, 88, 12, 0.7)" stroke="white" stroke-width="0.5"/> <!-- Orange: Soil Rehab -->
-
-                                    <rect x="5" y="65" width="30" height="30" fill="rgb(22, 163, 74, 0.7)" stroke="white" stroke-width="0.5"/> <!-- Forest Green: Reforest -->
-                                    <rect x="35" y="65" width="30" height="30" fill="rgb(220, 38, 38, 0.7)" stroke="white" stroke-width="0.5"/> <!-- Red: Erosion Barrier -->
-                                    <rect x="65" y="65" width="30" height="30" fill="rgb(22, 163, 74, 0.7)" stroke="white" stroke-width="0.5"/> <!-- Forest Green: Reforest -->
+                                    <!-- Keeping the placeholder rectangles below the image tag for structure, but they are now effectively covered by the image. -->
+                                    <rect x="5" y="5" width="30" height="30" fill="rgb(22, 163, 74, 0.7)" stroke="white" stroke-width="0.5" style="display:none;"/>
+                                    <rect x="35" y="5" width="30" height="30" fill="rgb(234, 88, 12, 0.7)" stroke="white" stroke-width="0.5" style="display:none;"/>
+                                    <rect x="65" y="5" width="30" height="30" fill="rgb(220, 38, 38, 0.7)" stroke="white" stroke-width="0.5" style="display:none;"/>
+                                    <rect x="5" y="35" width="30" height="30" fill="rgb(220, 38, 38, 0.7)" stroke="white" stroke-width="0.5" style="display:none;"/>
+                                    <rect x="35" y="35" width="30" height="30" fill="rgb(22, 163, 74, 0.7)" stroke="white" stroke-width="0.5" style="display:none;"/>
+                                    <rect x="65" y="35" width="30" height="30" fill="rgb(234, 88, 12, 0.7)" stroke="white" stroke-width="0.5" style="display:none;"/>
+                                    <rect x="5" y="65" width="30" height="30" fill="rgb(22, 163, 74, 0.7)" stroke="white" stroke-width="0.5" style="display:none;"/>
+                                    <rect x="35" y="65" width="30" height="30" fill="rgb(220, 38, 38, 0.7)" stroke="white" stroke-width="0.5" style="display:none;"/>
+                                    <rect x="65" y="65" width="30" height="30" fill="rgb(22, 163, 74, 0.7)" stroke="white" stroke-width="0.5" style="display:none;"/>
                                 </svg>
                             </div>
                             <div class="absolute top-4 left-1/2 transform -translate-x-1/2 px-4 py-2 bg-white rounded-full text-lg font-bold text-teal-600 shadow-lg">Optimization Results (Parcel Grid)</div>
@@ -198,7 +200,7 @@
                         <div class="p-3 bg-gray-50 rounded-lg">
                             <p class="text-3xl font-bold text-red-600">28%</p>
                             <p class="text-sm text-gray-500">High Severity Parcels</p>
-                        </div>
+                        </p>
                     </div>
 
                     <!-- Final Action Button (Compartmentalized) -->

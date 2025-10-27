@@ -132,7 +132,8 @@
                         
                         <!-- Map Content for Initial Setup (Step 1) -->
                         <div id="map-initial" class="w-full h-full p-4">
-                            <img src="https://placehold.co/1000x600/b3d4d7/008080?text=US+Wildfire+Data+Coverage+%26+MTBS+Sources" 
+                            <!-- MARKER 1: Initial Setup / US Coverage Map -->
+                            <img src="photo1.png" 
                                  alt="Map of US showing MTBS data sources" 
                                  class="map-placeholder-img rounded-lg shadow-inner" 
                                  onerror="this.onerror=null; this.src='https://placehold.co/1000x600/b3d4d7/008080?text=US+Map+View'">
@@ -141,7 +142,8 @@
 
                         <!-- Map Content for California (Step 2/3) -->
                         <div id="map-california" class="w-full h-full p-4 hidden">
-                            <img src="https://placehold.co/1000x600/a0522d/ffffff?text=California+Fire+Perimeter+%26+Topography+Data+Loaded" 
+                            <!-- MARKER 2: Region Focus / California Fire Perimeter -->
+                            <img src="photo2.png" 
                                  alt="Satellite image of California burn perimeter" 
                                  class="map-placeholder-img rounded-lg shadow-inner" 
                                  onerror="this.onerror=null; this.src='https://placehold.co/1000x600/b3d4d7/008080?text=CA+Region+Focus'">
@@ -150,9 +152,11 @@
 
                         <!-- Map Content for Results (Step 4/5) -->
                         <div id="map-results" class="w-full h-full p-4 hidden">
-                            <!-- Background uses the high-contrast burned forest image -->
+                            <!-- MARKER 3: Results Map Background (Photo 3) -->
                             <div class="relative w-full h-full bg-cover bg-center rounded-lg shadow-inner" 
-                                 style="background-image: url('https://placehold.co/1000x600/1e1e1e/d4d4d4?text=AI+Segmentation+Layer+-+Burned+Forest+View')">
+                                 style="background-image: url('photo3.png')">
+                                 
+                                <!-- MARKER 4: The SVG overlay is part of the final visualization (Photo 4) -->
                                 <svg class="absolute inset-0" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
                                     <!-- Simplified grid for visual segmentation -->
                                     <rect x="5" y="5" width="30" height="30" fill="rgb(22, 163, 74, 0.7)" stroke="white" stroke-width="0.5"/> <!-- Forest Green: Reforest -->
